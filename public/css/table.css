@@ -1,0 +1,173 @@
+/* Gaya untuk tabel */
+.modern-table {
+    width: 80%; /* Batas lebar tabel */
+    max-width: 1200px; /* Maksimal lebar tabel */
+    margin: 20px auto; /* Posisi tabel berada di tengah */
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modern-table thead {
+    background: #364c84; /* Gradien hijau */
+    color: #ffffff;
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 14px 20px; /* Padding untuk sel */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modern-table tbody tr {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.modern-table tbody tr:hover {
+    background-color: #e8f5e9; /* Hijau muda saat hover */
+    transform: scale(1.02);
+}
+
+/* Gaya tombol update */
+.btn-update {
+    background: linear-gradient(
+        90deg,
+        #29b6f6,
+        #0288d1
+    ); /* Gradien biru cerah */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-update:hover {
+    background: linear-gradient(
+        90deg,
+        #0288d1,
+        #01579b
+    ); /* Biru gelap saat hover */
+    transform: translateY(-3px);
+}
+
+/* Gaya tombol delete */
+.btn-danger {
+    background: linear-gradient(
+        90deg,
+        #ff7043,
+        #d84315
+    ); /* Gradien oranye cerah */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(
+        90deg,
+        #d84315,
+        #bf360c
+    ); /* Oranye gelap saat hover */
+    transform: translateY(-3px);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #4caf50;
+    background-color: #fff;
+    outline: none;
+}
+
+.form-textarea {
+    resize: none; /* Mencegah ukuran diubah oleh pengguna */
+    height: 150px;
+}
+
+.btn-update {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-update:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .admin-form {
+        padding: 15px;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn-update {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
